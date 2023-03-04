@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe36949d.css",
+    "main.js": "/static/js/main.917e08e1.js",
+    "static/media/amargbo.jpg": "/static/media/amargbo.052f639602eaf639abfe.jpg",
+    "static/media/sdh.png": "/static/media/sdh.912312cae4c181836969.png",
+    "index.html": "/index.html",
+    "main.fe36949d.css.map": "/static/css/main.fe36949d.css.map",
+    "main.917e08e1.js.map": "/static/js/main.917e08e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe36949d.css",
+    "static/js/main.917e08e1.js"
+  ]
+}
