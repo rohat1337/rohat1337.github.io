@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Albumhouse</title>
+  <meta name="description" content="A premium iPhone music player for libraries you control. Connect Jellyfin or Navidrome / OpenSubsonic.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="./">Albumhouse</a>
+      <nav><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a><a href="support.html">Support</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Your music. Your server.<br>One beautiful player.</h1>
+    <p class="lead">Albumhouse is an iPhone music player for libraries you control. Connect Jellyfin or Navidrome / OpenSubsonic and your albums look and play like they belong on your phone.</p>
+    <!-- Replace with the App Store or public TestFlight link at launch. -->
+    <a class="cta" href="support.html">Coming soon to the App Store</a>
+    <p class="note">Free to download. Requires your own Jellyfin, Navidrome, or other OpenSubsonic server.</p>
+
+    <div class="shots">
+      <img src="images/home.jpg" alt="Home: recently played and recently added albums" width="506" height="1100">
+      <img src="images/album.jpg" alt="An album with its track list, the playing song marked" width="506" height="1100">
+      <img src="images/now-playing.jpg" alt="Now Playing: a large album cover on a background tinted to match it" width="506" height="1100">
+    </div>
+
+    <h2>Works with the server you already run</h2>
+    <div class="grid">
+      <div class="card"><h3>Jellyfin</h3><p>Sign in with your Jellyfin account. Music libraries only, no video clutter.</p></div>
+      <div class="card"><h3>Navidrome / OpenSubsonic</h3><p>Navidrome and other OpenSubsonic servers, with the same app and the same feel.</p></div>
+    </div>
+
+    <h2 id="features">Made for listening</h2>
+    <div class="grid">
+      <div class="card"><h3>Album-first</h3><p>Covers lead everywhere: Home, the album grid, search, and Now Playing.</p></div>
+      <div class="card"><h3>Fast on big libraries</h3><p>Thousands of albums scroll smoothly and load as you go.</p></div>
+      <div class="card"><h3>Queue that keeps up</h3><p>Play next, add to queue, reorder, shuffle, repeat. Your place survives a relaunch.</p></div>
+      <div class="card"><h3>Favorites and playlists</h3><p>Saved on your server, so they match your other apps.</p></div>
+      <div class="card"><h3>Lock screen and AirPlay</h3><p>Background playback, Control Center, headphones, and AirPlay speakers.</p></div>
+      <div class="card"><h3>Opens when the server can't</h3><p>Your library opens from a saved copy during outages, and goes live again on its own when the server is back.</p></div>
+    </div>
+
+    <h2 id="privacy">Private by design</h2>
+    <p class="lead">Music streams straight from your server to your iPhone. Albumhouse has no accounts, no ads, and no analytics. We don't collect your listening history or your library. Your sign-in stays in your iPhone's Keychain.</p>
+    <p><a href="privacy.html">Read the privacy policy</a></p>
+
+    <h2 id="faq">Questions</h2>
+    <dl class="faq">
+      <dt>Does Albumhouse come with music?</dt>
+      <dd>No. It plays music from a server you run or are allowed to use. It doesn't sell, stream, or find music for you.</dd>
+      <dt>What do I need?</dt>
+      <dd>An iPhone and a Jellyfin, Navidrome, or other OpenSubsonic server with your music on it, reachable from your phone.</dd>
+      <dt>What's the server address?</dt>
+      <dd>The address you open your server with in a browser, for example <code>http://192.168.1.20:8096</code> for Jellyfin or <code>http://192.168.1.20:4533</code> for Navidrome. Use HTTPS if your server has it.</dd>
+      <dt>Can I use it away from home?</dt>
+      <dd>Yes, if your server is reachable from outside your network, for example through a VPN or a domain with HTTPS.</dd>
+      <dt>Does it download music for offline listening?</dt>
+      <dd>Not yet. Albumhouse streams from your server.</dd>
+      <dt>Is it free?</dt>
+      <dd>Yes. Browsing, search, playback, the queue, favorites, and playlists are free.</dd>
+    </dl>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+      <p>Albumhouse is not affiliated with Jellyfin, Navidrome, or the OpenSubsonic project.</p>
+    </div>
+  </footer>
+</body>
+</html>

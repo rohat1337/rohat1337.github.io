@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · Albumhouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site"><div class="wrap"><a class="brand" href="./">Albumhouse</a>
+    <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+
+  <main class="wrap doc">
+    <h1>Support</h1>
+    <p>Email <a href="mailto:rohat.upl@gmail.com">rohat.upl@gmail.com</a>, or in the app go to Settings → Send Feedback. Include what you tapped and what you expected; screenshots help. Please don't send passwords.</p>
+
+    <h2>Connecting</h2>
+    <dl class="faq">
+      <dt>Which address do I enter?</dt>
+      <dd>The one you use to open your server in a browser, including the port: usually <code>:8096</code> for Jellyfin and <code>:4533</code> for Navidrome. If your server sits under a path (for example <code>https://example.com/jellyfin</code>), include it.</dd>
+      <dt>"Couldn't reach your server"</dt>
+      <dd>Check that your iPhone is on the same network as the server, or that the server is reachable from outside. Open the same address in Safari on the iPhone. If Safari can't open it, the app can't either.</dd>
+      <dt>The app asks about my local network</dt>
+      <dd>iOS asks before any app connects to devices at home. Allow it so Albumhouse can reach a server on your network. Change it later in Settings → Privacy &amp; Security → Local Network.</dd>
+      <dt>Why does it warn about HTTP?</dt>
+      <dd>Without HTTPS, your sign-in and music travel unencrypted. That's common and fine on a home network you trust; use HTTPS when connecting over the internet.</dd>
+      <dt>My password is right but sign-in fails</dt>
+      <dd>Sign in to the server's own web page with the same user name and password. If that works, check that the account may use the music library. On Navidrome, the user must exist in Navidrome itself.</dd>
+    </dl>
+
+    <h2>Playback</h2>
+    <dl class="faq">
+      <dt>A track says its format may not be supported</dt>
+      <dd>iPhone plays MP3, AAC, ALAC, FLAC, and WAV. Ogg Vorbis and Opus files can't be played without conversion on the server.</dd>
+      <dt>Music stops when I lose connection</dt>
+      <dd>Albumhouse streams from your server, so playback continues only for what has already loaded. Tap play again when you're back online.</dd>
+    </dl>
+
+    <h2>Your data</h2>
+    <p>Signing out removes your sign-in and the saved library from the iPhone. See the <a href="privacy.html">privacy policy</a> for details.</p>
+  </main>
+
+  <footer class="site"><div class="wrap"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></footer>
+</body>
+</html>
