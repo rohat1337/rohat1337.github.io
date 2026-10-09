@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Another Steps</title>
+<meta name="description" content="There are millions of step counters. This one counts in Golden Gate Bridges.">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg: #0b6b3a; --ink: #ffffff; --muted: rgba(255,255,255,.75); --amber: #f4b400; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--ink);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding: 48px 20px; box-sizing: border-box; }
+  main { max-width: 540px; display: grid; gap: 18px; justify-items: start; border: 4px solid #fff; border-radius: 22px; padding: 32px 28px; }
+  img { width: 104px; height: 104px; border-radius: 23px; box-shadow: 0 12px 30px rgba(0,0,0,.25); }
+  .eyebrow { font: 13px/1.4 ui-monospace, Menlo, monospace; color: var(--muted); }
+  h1 { font-size: 50px; line-height: 1; margin: 0; font-weight: 900; font-stretch: condensed; }
+  h1 span { color: var(--amber); }
+  p { margin: 0; color: var(--muted); font-size: 19px; }
+  nav { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 8px; }
+  a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <img src="icon.png" alt="Another Steps app icon">
+  <div class="eyebrow">Step counter no. <span id="n">3,104,556</span></div>
+  <h1>Another <span>Steps</span></h1>
+  <p>There are millions of step counters. This one counts in Golden Gate Bridges.</p>
+  <nav>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+</main>
+<script>
+  // Same made-up counter as in the app: one more step counter every nine seconds.
+  const n = 3104556 + Math.max(0, Math.floor((Date.now() - Date.UTC(2026, 9, 8)) / 9000));
+  document.getElementById("n").textContent = n.toLocaleString("en-US");
+</script>
+</body>
+</html>
